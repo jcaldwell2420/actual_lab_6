@@ -5,6 +5,7 @@ def encoder(password):
         encode_password += str(encode_int)  # converts the encoded integer value to string, added to encode_password
     return encode_password
 
+
 def decoder(password):
     decoded_pswrd = ""
     for num in password:
