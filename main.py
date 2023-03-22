@@ -5,6 +5,7 @@ def encoder(password):
         encode_password += str(encode_int)  # converts the encoded integer value to string, added to encode_password
     return encode_password
 
+
 if __name__ == "__main__":
     run_program = True
     encode_pass = None  # stores the encoded password for the decode function
@@ -15,3 +16,16 @@ if __name__ == "__main__":
         print("1. Encode")
         print("2. Decode")
         print("3. Quit")
+
+        user_option = input("\nPlease enter an option: ")
+
+        if user_option == "1":
+            org_pass = str(input("Please enter your password to encode: "))
+            encode_pass = encoder(org_pass)  # converts original password to encoded password and stores in encode_pass
+            print("Your password has been encoded and stored!\n")
+        elif user_option == "2":
+            # decode_pass = decoder(encode_pass)
+            # print(f"The encoded password is {encode_pass}, and the original password is {decode_pass}.\n")
+            pass
+        elif user_option == "3":
+            run_program = False
