@@ -15,6 +15,7 @@ def decoder(password):
         decoded_pswrd += str(new_value)
     return decoded_pswrd
 
+
 if __name__ == "__main__":
     run_program = True
     encode_pass = None  # stores the encoded password for the decode function
@@ -35,6 +36,5 @@ if __name__ == "__main__":
         elif user_option == "2":
             decode_pass = decoder(encode_pass)
             print(f"The encoded password is {encode_pass}, and the original password is {decode_pass}.\n")
-            pass
         elif user_option == "3":
             run_program = False
