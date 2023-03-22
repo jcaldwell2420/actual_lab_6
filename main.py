@@ -22,13 +22,14 @@ if __name__ == "__main__":
     encode_pass = None  # stores the encoded password for the decode function
 
     while run_program:
+        # list of menu options
         print("Menu")
         print("-------------")
         print("1. Encode")
         print("2. Decode")
         print("3. Quit")
 
-        user_option = input("\nPlease enter an option: ")
+        user_option = input("\nPlease enter an option: ")  # intakes user input corresponding to menu options
 
         if user_option == "1":
             org_pass = str(input("Please enter your password to encode: "))
