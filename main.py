@@ -11,7 +11,7 @@ def decoder(password):
     for num in password:
         if int(num) >= 3:  # If num - 3 does not reach -1
             new_value = int(num) - 3
-        elif int(num) > 3:  # If num - 3 is less than 0
+        elif int(num) < 3:  # If num - 3 is less than 0
             new_value = (int(num) + 10) - 3
         decoded_pswrd += str(new_value)
     return decoded_pswrd
